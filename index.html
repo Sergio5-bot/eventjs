@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Attendee Management</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="header">Event Attendee Management Scheme</h1>
+
+        <section class="add-attendee">
+            <h2 class="section-title">Add Attendee</h2>
+            <form action="#" id="attendee-form">
+                <input type="text" id="name" placeholder="Name" required>
+                <input type="email" id="email" placeholder="Email" required>
+                <input type="text" id="contacts" placeholder="Contacts" required>
+                <input type="text" id="identity" placeholder="Identity" required>
+                <button type="button" class="submit-btn" onclick="addAttendee()">Add Attendee</button>
+            </form>
+        </section>
+
+        <section class="find-attendee">
+            <h2 class="section-title">Find Attendee</h2>
+            <input type="text" id="find-attendee" placeholder="Search by Name, Email" required>
+            <button onclick="findAttendee()">Find Attendee</button>
+        </section>
+
+        <section class="list-attendee">
+            <h2 class="section-title">List of Attendees</h2>
+            <form action="">
+                <input type="text" id="full" placeholder="Name" required>
+                <input type="email" id="address" placeholder="Email" required>
+                <input type="text" id="phone" placeholder="Contacts" required>
+                <input type="text" id="event" placeholder="Identity" required>
+                <button type="button" onclick="listAttendee()">Submit</button>
+            </form>
+        </section>
+    </div>
+    <script src="js/event.js"></script>
+</body>
+</html>
